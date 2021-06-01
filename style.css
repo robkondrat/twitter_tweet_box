@@ -55,7 +55,7 @@ body {
   border-radius: 50px;
   transition: background 0.2s ease;
 }
-.input-box .privacy:hover {
+.input-box .privacy:hover, .icons li:hover {
   background: #e7f5fe;
 }
 .privacy i {
@@ -76,15 +76,40 @@ body {
   display: inline-flex;
 }
 .icons li {
+  color: #1da1f2;
   list-style: none;
   height: 38px;
   width: 38px;
   margin: 0 2px;
   font-size: 20px;
-  background: #e7f5fe;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition: background 0.2s ease;
+}
+.bottom .content {
+  display: flex;
+  align-items: center;
+}
+.content .counter {
+  display: none;
+  margin-right: 15px;
+  padding-right: 15px;
+  color: #333;
+  border-right: 1px solid #aab8c2;
+}
+.content button {
+  padding: 9px 18px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  background: #1da1f2;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.5;
+  pointer-events: none;
 }
