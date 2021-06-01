@@ -26,6 +26,11 @@ body {
 .input-box .tweet-area {
   position: relative;
   min-height: 130px;
+  max-height: 170px;
+  overflow-y: auto;
+}
+.tweet-area::-webkit-scrollbar {
+  width: 0px;
 }
 .tweet-area .placeholder {
   position: absolute;
@@ -36,14 +41,21 @@ body {
 }
 .tweet-area .input {
   outline: none;
-  font-size: 17px;
+  font-size: 22px;
   word-wrap: break-word;
+  word-break: break-all;
+}
+.tweet-area .editable {
+  position: relative;
+  z-index: 5;
 }
 .tweet-area .readonly {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
+  color: transparent;
+  background: transparent;
 }
 .readonly .highlight { 
   background: #fd9bb0;
