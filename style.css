@@ -45,6 +45,9 @@ body {
   left: 0;
   z-index: -1;
 }
+.readonly .highlight { 
+  background: #fd9bb0;
+}
 .input-box .privacy {
   color: #1da1f2;
   margin: 15px 0;
@@ -112,4 +115,8 @@ body {
   cursor: pointer;
   opacity: 0.5;
   pointer-events: none;
+}
+.content button.active {
+  opacity: 1;
+  pointer-events: auto;
 }
